@@ -1,0 +1,159 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt, a4paper]{awesome-cv}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-emerald}
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,edge,right]{maciejstanek-face.png}
+\name{Maciej}{Stanek}
+\position{Software Engineer{\enskip\cdotp\enskip}Security Expert}
+\position{Electronic Design Automation Software Engineer}
+\address{Poznań{\enskip\cdotp\enskip}Poland}
+\mobile{660 162 288}
+\email{maciej.aleksander.stanek@gmail.com}
+\dateofbirth{March 28, 1995}
+% \dateofbirth{March 28\textsuperscript{th} 1995}
+\github{maciejstanek}
+\hackerrank{maciejstanek}
+
+% \quote{Programming enthusiast, maker and hacker, CLI freak, detail oriented engineer.}
+\quote{Team--oriented and eager to learn C++ developer with 3+ years of full--time experience and an extraordinary attention to detail, seeking to grow as an engineer by helping Egnyte enhance and maintain their products.}
+% \quote{``Programming enthusiast, maker and hacker, CLI freak, detail oriented engineer."}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {I hereby consent for my personal data to be processed by Egnyte Polska Sp. z o.o.{\break}for the purposes of the recruitment process.}
+  {1/1}
+
+  % {Wyrażam zgodę na przetwarzanie moich danych osobowych przez Egnyte Poland Sp. z o.o. \break w celu prowadzenia rekrutacji na aplikowane przeze mnie stanowisko.}
+  %{Maciej Stanek~~~·~~~Curriculum Vitae}
+  %{\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+
+\cvsection{Experience}
+\begin{cventries}
+  \cventry
+    {Software Engineer} % Job title
+    {Siemens Digital Industries Software --- Tessent MemoryBIST} % Organization
+    {Poznań, Poland} % Location
+    {July 2019 --- Present} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item {Started my full--time employment; Mentor Graphics was acquired by Siemens.}
+      \item {Implemented new major milestones for the full IEEE 1450.6.2 support, including both quality and quantity enhancements.}
+      \item {Implemented a significant portion of new enhancements to the Tessent MemoryBIST engine core replacement, rewritten as modern C++ (14+).}
+      \item {Was prototyping an automated memory test coverage tool for identifying potential improvements targeting emerging memories.}
+      \item {Was performing the day--to--day maintenance of the Tessent MemoryBIST tool including bugfixing and verifying test regressions.}
+      \item {Was an active member of the IEEE 1450.6.2 Working Group aiming at creating a second revision of the respective standard.}
+      \item {Was involved in recruiting and managing summer interns.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Software Engineering Intern} % Job title
+    {Mentor Graphics --- Tessent MemoryBIST} % Organization
+    {Poznań, Poland} % Location
+    {July 2016 --- June 2019} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item {Implemented a YACC based parser and translator MVP for IEEE 1450.6.2 Memory Core Test Language files.}
+      \item {Reimplemented memory library validations as a part of a wider migration from an incompatible legacy tool.}
+      \item {Implemented several improvements to a vendor--specific memory library format translator.}
+      \item {Was performing the day--to--day maintenance of the Tessent MemoryBIST tool.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Junior Web Developer} % Job title
+    {ContentForces} % Organization
+    {Poznań, Poland} % Location
+    {December 2014 --- June 2016} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Implemented a centralized consignment tracking system for a European clothing brand. The system routinely aggregated EDIFACT reports from different transportation companies in an MS SQL database.}
+        \item {Co--authored an internship offers portal for dutch students. Implemented an OAuth2 based session and authentication system. Co--implemented an internship offer preview form, an internship posting system and an image storage system.}
+        \item {Was performing the day--to--day maintenance of other products, including identifying potential security concerns and fixing them.}
+      \end{cvitems}
+    }
+\end{cventries}
+
+\cvsection{Skills}
+\begin{cvskills}
+  \cvskill
+    {Main technologies} % Category
+    {Modern C++, Google Test, Python} % Skills
+  \cvskill
+    {Tools} % Category
+    {Git, Linux CLI, Phabricator, Jira} % Skills
+  \cvskill
+    {Libraries \& Frameworks} % Category
+    {C++ Std, Boost (range adaptors, data structures, spirit), YACC \& Lex}
+  \cvskill
+    {Other technologies} % Category
+    {Tcl, Verilog, basics of CMake, basics of Qt} % Skills
+  \cvskill
+    {Languages} % Category
+    {Polish, English} % Skills
+\end{cvskills}
+
+\cvsection{Education}
+\begin{cventries}
+  \cventry
+    {M.Eng. in Computer Science} % Degree
+    {Poznań University of Technology} % Institution
+    {Poznań, Poland} % Location
+    {March 2018 --- June 2019} % Date(s)
+    {
+      \begin{cvitems} % Description(s) bullet points
+      \item {Specialized in embedded systems and edge computing.}
+      \item {Received A+ as the final grade.}
+      \item {Thesis in cooperation with my current company: Implementation of a Memory Library Description Converter from the IEEE 1450.6.2 Standard to a Format of a Commercial Tool.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {B.Eng. in Automated Control \& Robotics} % Degree
+    {Poznań University of Technology} % Institution
+    {Poznań, Poland} % Location
+    {October 2014 --- February 2018} % Date(s)
+    {
+      \begin{cvitems} % Description(s) bullet points
+      \item {Main acquired skills include industrial automation system design, robotics, PLC programming, real--time systems implementation, \&c.}
+      \item {Received A as the final grade.}
+      \item {Thesis: Design and experimental verification of a control system dedicated to an omnidirectional wheeled robot.}
+      \end{cvitems}
+    }
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+\end{document}
