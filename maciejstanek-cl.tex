@@ -1,0 +1,106 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt, a4paper]{awesome-cv}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-emerald}
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,edge,left]{maciejstanek-face.png}
+\name{Maciej}{Stanek}
+%\position{Software Engineer{\enskip\cdotp\enskip}Security Expert}
+\position{Electronic Design Automation Software Engineer}
+\address{Poznań{\enskip\cdotp\enskip}Poland}
+\mobile{660162288}
+\email{maciejaleksanderstanek@gmail.com}
+% \dateofbirth{March 28, 1995}
+% \dateofbirth{1995}
+% \dateofbirth{March 28\textsuperscript{th} 1995}
+\github{maciejstanek}
+\linkedin{maciejaleksanderstanek}
+%\hackerrank{maciejstanek}
+% 
+% \quote{Programming enthusiast, maker and hacker, CLI freak, detail oriented engineer.}
+%\quote{Team--oriented and eager to learn C++ developer with 3+ years of full--time experience and an extraordinary attention to detail, seeking to grow as an engineer by helping to enhance and maintain Egnyte product suite.}
+% \quote{``Programming enthusiast, maker and hacker, CLI freak, detail oriented engineer."}
+
+
+%-------------------------------------------------------------------------------
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Egnyte Hiring Team}
+  {Egnyte Poland sp. z o.o.\\Baraniaka 6\\61-131 Poznań, Poland}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for C++ Software Engineer}
+% How the letter is opened
+\letteropening{Dear Egnyte Hiring Team,}
+% How the letter is closed
+\letterclosing{Thank you for your time and consideration.\\Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {I hereby consent for my personal data to be processed by Egnyte Polska sp. z o.o.{\break}for the purposes of the recruitment process.}
+  {1/1}
+
+% Print the title with above letter information
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+
+I am a 
+
+\lettersection{Why Egnyte?}
+I have already heard about Egnyte on a couple of occasions before, always in a positive light --- the key advantages being the care about the well--being of the employees, sensible project management, and competitive compensation. It was no surprise then that when I have learned about the vacant C++ software engineer post, I immediately decided to apply.
+
+\lettersection{Why Me?}
+Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter information
+\makeletterclosing
+
+%-------------------------------------------------------------------------------
+\end{document}
